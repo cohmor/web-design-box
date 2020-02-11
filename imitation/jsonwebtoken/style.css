@@ -1,0 +1,50 @@
+.header {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background-image: -webkit-radial-gradient(
+      closest-corner,
+      rgba(16, 47, 70, 0) 60%,
+      rgba(16, 47, 70, 0.26)
+    ),
+    -webkit-linear-gradient(108deg, rgba(51, 134, 255, 0.9), rgba(
+            0,
+            31,
+            76,
+            0.9
+          )
+          90%);
+}
+.logo {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  display: inline-block;
+}
+.credits {
+  font-family: "Francois One", sans-serif;
+  color: #ffffff;
+  padding: 0 0 0 10px;
+}
+.icon > .text {
+  font-size: 20px;
+}
+.credits,
+.credits > .text {
+  font-size: 12px;
+}
+.icon > .text,
+.credits > .text {
+  font-family: "Francois One", sans-serif;
+  color: #ffffff;
+  padding: 0 0 0 10px;
+  opacity: 0.8;
+  text-decoration: none;
+}
+.icon > .text:hover,
+.credits > .text:hover {
+  opacity: 1;
+}
