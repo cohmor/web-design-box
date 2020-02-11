@@ -48,3 +48,23 @@
 .credits > .text:hover {
   opacity: 1;
 }
+
+.title {
+  padding-top: 100px;
+  text-align: center;
+}
+
+.title > .name {
+  font-weight: 300;
+  font-size: 34px;
+  margin: 3px;
+  color: #ffffff;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+.title > .description{
+  font-weight: 300;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.85);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
