@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<head>
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900"
+    rel="stylesheet"
+  />
+  <link
+    href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css"
+    rel="stylesheet"
+  />
+  <link
+    href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css"
+    rel="stylesheet"
+  />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui"
+  />
+  <title>Vue-Vuetify Template</title>
+</head>
+
+<body>
+  <div id="app">
+    <v-app>
+      <v-app-bar app color="#3A4952" dark>
+        <v-toolbar-title>Vue-Vuetify Template</v-toolbar-title>
+      </v-app-bar>
+      <v-content>
+        <v-icon @click="showSearch=true" v-if="!showSearch" large class="ma-3"
+          >mdi-magnify</v-icon
+        >
+        <v-text-field label="Search" class="input" v-if="showSearch">
+          <template slot="prepend-inner">
+            <v-icon
+              @click="searchEmployee = false"
+              :color="searchEmployee ? 'grey lighten-2' : 'blue lighten-3'"
+              :class="searchEmployee ? 'ml-1' : 'outlined ml-1'"
+            >
+              mdi-account-tie</v-icon
+            >
+            <v-icon
+              @click="searchEmployee = true"
+              :color="searchEmployee ? 'blue lighten-3' : 'grey lighten-2'"
+              :class="searchEmployee ? 'outlined ml-1' : 'ml-1'"
+            >
+              mdi-file-tree</v-icon
+            >
+            <v-divider class="ml-2" vertical></v-divider>
+          </template>
+          <template slot="append">
+            <v-icon>mdi-magnify</v-icon>
+            <v-divider vertical></v-divider>
+            <v-icon @click="showSearch = false">mdi-close</v-icon>
+          </template>
+        </v-text-field>
+      </v-content>
+    </v-app>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+  <script>
+    new Vue({
+      el: "#app",
+      vuetify: new Vuetify(),
+      data() {
+        return {
+          searchEmployee: false,
+          showSearch: false
+        };
+      }
+    });
+  </script>
+  <style>
+    .input {
+      width: 500px;
+    }
+
+    .v-icon.outlined {
+      border: 1px solid currentColor;
+      border-radius: 10%;
+      height: 25px;
+      width: 25px;
+    }
+  </style>
+</body>
