@@ -2,13 +2,17 @@
   <head>
     <title>JSON Web Token (JWT)</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/792fa249d5.js"
+      crossorigin="anonymous"
+    ></script>
     <link
       href="https://fonts.googleapis.com/css?family=Francois+One&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <div class="header"></div>
+    <div class="background"></div>
     <div id="app">
       <header>
         <div class="container">
@@ -20,19 +24,35 @@
               by<a href="https://www.google.com" class="text">Atelier Josh</a>
             </div>
           </div>
-          <div class="toplink"></div>
-          <div class="share"></div>
+          <div class="toplink">
+            <div class="btn-group" role="group" aria-label="...">
+              <a href="/" class="btn btn-link">JSON Web Token</a>
+              <a href="https://stormpath.com/blog/beginners-guide-jwts-in-java" class="btn btn-link">JWT101</a>
+            </div>
+          </div>
+          <div class="share">
+            <a
+              href="https://twitter.com/intent/tweet?text=Easily%20decode,%20encode,%20and%20validate%20your%20JWTs%20https%3A%2F%2Fjsonwebtoken.io%20%23jwt"
+              target="_blank"
+              rel="nofollow"
+              class="btn btn-share"
+              ><i class="fab fa-twitter" aria-hidden="true"></i> Share on
+              Twitter
+            </a>
+          </div>
           <div class="title">
             <h1 class="name">Encode or Decode JWTs</h1>
             <p class="description">
-              Paste a JWT and decode its header, payload, and signature,<br>
-              or provide header, payload, and signature information to generate a JWT
+              Paste a JWT and decode its header, payload, and signature,<br />
+              or provide header, payload, and signature information to generate
+              a JWT
             </p>
           </div>
         </div>
       </header>
       <section id="section-1"></section>
       <section id="section-2"></section>
+      <footer></footer>
     </div>
   </body>
 </html>
